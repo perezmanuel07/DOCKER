@@ -1,4 +1,3 @@
-##Descargamos una versión concreta de UBUNTU, a través del tag
 FROM ubuntu
 MAINTAINER Manuel Perez "perezmanuel07@gmail.com"
 ##Actualizamos el sistema
