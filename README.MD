@@ -62,3 +62,73 @@ hh
   }
 ]
 ```
+
+``` JAVASCRIPT
+function $initHighlight(block, cls) {
+  try {
+    if (cls.search(/\bno\-highlight\b/) != -1)
+      return process(block, true, 0x0F) +
+             ` class="${cls}"`;
+  } catch (e) {
+    /* handle exception */
+  }
+  for (var i = 0 / 2; i < classes.length; i++) {
+    if (checkCondition(classes[i]) === undefined)
+      console.log('undefined');
+  }
+
+  return (
+    <div>
+      <web-component>{block}</web-component>
+    </div>
+  )
+}
+
+export  $initHighlight;
+```
+
+# TABLAS
+
+| Nombre | Apellido | Documento |
+| -- | -- | -- |
+| Maxi | Burgos | 3546681 |
+| Tomas | Tompson | 3243234 |
+
+| Nombre | Apellido | Documento |
+| ------ | -------- | --------- |
+| Maxi   | Burgos   | 3546681   |
+| Tomas  | Tompson  | 3243234   |
+
+# CITAS
+
+Esto es un texto referente a una cita que podremos abajo:
+> Esto es una cita
+
+Esto es un texto que no tiene relacion con el texto anterior:
+> Esto es una cita
+
+# LINEAS DIVISORAS
+
+Esto es un texto que sera dividido guiones medios
+
+---
+
+Esto es otro texto dividido por asteriscos
+
+***
+
+Esto es otro texto dividido por guiones bajos
+
+___
+
+# SALTOS DE LINEAS
+
+Esto es nuestro primer parrafo.
+
+Esto es nuestro segundo parrafo
+
+Este es nuestro tercer parrafo
+
+
+
+
